@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: normal;
+    background-color: #f4f7f6;
+    margin: 0px;
+}
+
+
+header {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: 'theblacklist', Arial, sans-serif;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+.separator {
+    width: 40px;
+    height: 1px;
+    margin: 15px auto;
+    display: block;
+    background: #999999;
+}
+
+.contener {
+    width: 80%;
+    margin: auto;
+}
+
+#projets {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projet {
+    width: 400px;
+    margin: 30px;
+    background-color: white;
+    padding-bottom: 15px;
+    border: 0px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.projet:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.5s;
+}
+
+.projet img {
+    min-width: 400px;
+    height: 260px;
+}
+
+.projet span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.picture {
+    width: 400px;
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.projet .date-project {
+    font-size: 0.7em;
+}
+
+#logo {
+    margin-top: 30px;
+    width: 50px;
+}
+
+h2 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 1.5em;
+    width: 400px;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0;
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+#picture-project img {
+    width: 70%;
+}
+
+li:hover {
+    opacity: 0.6;
+}
+
+nav {
+    text-align: center;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact {
+    padding: 30px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+footer {
+    font-weight: bold;
+    background-color: #1D1D1D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Police */
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../src/theblacklist.ttf') format('truetype');
+}
+
+@media all and (max-width: 1000px) {
+    .projet {width: 100%; margin: 15px auto;}
+    .projet img {width: 100%; height: auto ;min-width: auto;}
+    .projet .picture {width: 100%;height: auto;}
+    header h2 {width: 90%;}
+}
